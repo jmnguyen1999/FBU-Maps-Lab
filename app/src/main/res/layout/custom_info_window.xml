@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_info_window_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ivInfo"
+            android:layout_marginStart="5dp"
+            android:layout_toRightOf="@id/ivInfo"
+            android:singleLine="true"
+            android:textColor="#ff669900"
+            android:textStyle="bold"
+            tools:text="Some title" />
+
+        <TextView
+            android:id="@+id/tv_info_window_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_info_window_title"
+            android:layout_alignStart="@id/tv_info_window_title"
+            android:layout_toRightOf="@id/ivInfo"
+            android:textColor="#ff0099cc"
+            tools:text="Some Description" />
+
+        <ImageView
+            android:id="@+id/ivInfo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            app:srcCompat="@android:drawable/ic_dialog_info" />
+    </RelativeLayout>
+
+</RelativeLayout>
